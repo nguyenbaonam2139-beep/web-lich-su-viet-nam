@@ -1,7 +1,7 @@
 import axios from "axios";
 import { TimelineEvent, Question } from "./types";
-
-const API_URL = "http://localhost:3005";
+// Use VITE_API_URL if defined, fallback to localhost for development
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3005";
 
 export const fetchTimelineEvents = async (): Promise<TimelineEvent[]> => {
   const response = await axios.get(`${API_URL}/events`);

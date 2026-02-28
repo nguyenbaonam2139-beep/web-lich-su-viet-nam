@@ -8,8 +8,8 @@ import { AdminProvider, useAdmin } from "./contexts/AdminContext";
 import { BadgeCelebration } from "./components/BadgeCelebration";
 import axios from "axios";
 
-// Unified API URL — phải khớp với api.ts
-const API_URL = "http://localhost:3005";
+// Unified API URL: Use environment variable in production, fallback to localhost
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:3005";
 
 export const App: React.FC = () => {
   const [user, setUser] = useState<any>(() => {
