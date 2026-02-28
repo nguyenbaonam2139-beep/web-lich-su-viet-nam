@@ -1,0 +1,90 @@
+.parallax-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    /* Behind everything */
+    overflow: hidden;
+    pointer-events: none;
+    /* Base background */
+    background: var(--timeline-bg, url('https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&q=80'));
+    background-size: var(--timeline-bg-size, cover);
+    background-attachment: fixed;
+    background-position: var(--timeline-bg-pos, center);
+}
+
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120%;
+    /* Taller to allow scrolling movement */
+    will-change: transform;
+}
+
+/* Layer 1: Dots Pattern */
+.bg-pattern-dots {
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.3;
+}
+
+/* Layer 2: Abstract Shapes */
+.bg-shape {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    opacity: 0.4;
+}
+
+.shape-1 {
+    width: 400px;
+    height: 400px;
+    background: #bfdbfe;
+    /* Light Blue */
+    top: 10%;
+    right: -100px;
+}
+
+.shape-2 {
+    width: 300px;
+    height: 300px;
+    background: #fecaca;
+    /* Light Red */
+    top: 60%;
+    left: -50px;
+}
+
+/* Layer 3: Particles */
+.floating-particle {
+    position: absolute;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    opacity: 0.15;
+}
+
+.p1 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    left: 15%;
+}
+
+.p2 {
+    width: 40px;
+    height: 40px;
+    top: 70%;
+    right: 20%;
+}
+
+.p3 {
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 80%;
+}

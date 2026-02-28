@@ -1,0 +1,148 @@
+.timeline-navigator {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    /* Horizontal container for track and items */
+    gap: 10px;
+    max-height: 80vh;
+    padding: 10px;
+}
+
+.nav-track {
+    position: absolute;
+    right: 23px;
+    /* Align with dots center */
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: #cbd5e1;
+    border-radius: 99px;
+    z-index: 0;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Spacing between years */
+    z-index: 1;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+    cursor: pointer;
+    position: relative;
+    height: 20px;
+    /* Set height to align */
+    transition: all 0.2s;
+    opacity: 0.6;
+}
+
+.nav-item:hover {
+    opacity: 1;
+}
+
+.nav-item.active {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.nav-year {
+    font-size: 12px;
+    font-weight: 700;
+    color: #64748b;
+    background: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    /* Hide by default, show on hover or active */
+    transform: translateX(10px);
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.nav-item:hover .nav-year,
+.nav-item.active .nav-year {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-dot {
+    width: 8px;
+    height: 8px;
+    background: #94a3b8;
+    border-radius: 50%;
+    transition: all 0.2s;
+    border: 2px solid white;
+    box-shadow: 0 0 0 1px #cbd5e1;
+}
+
+.nav-item:hover .nav-dot {
+    background: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.nav-item.active .nav-dot {
+    width: 12px;
+    height: 12px;
+    background: #2563eb;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+}
+
+/* Responsive: Move to bottom on mobile */
+@media (max-width: 768px) {
+    .timeline-navigator {
+        top: auto;
+        bottom: 20px;
+        right: 0;
+        left: 0;
+        transform: none;
+        flex-direction: column;
+        width: 100%;
+        max-height: auto;
+        padding: 10px 20px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(8px);
+        border-top: 1px solid #e2e8f0;
+    }
+
+    .nav-track {
+        width: 100%;
+        height: 2px;
+        top: 50%;
+        right: 0;
+        left: 0;
+        transform: translateY(-50%);
+    }
+
+    .nav-items {
+        flex-direction: row;
+        overflow-x: auto;
+        padding-bottom: 5px;
+        width: 100%;
+        justify-content: flex-start;
+        /* scrollable */
+    }
+
+    .nav-item {
+        flex-direction: column;
+        justify-content: center;
+        min-width: 40px;
+    }
+
+    .nav-year {
+        order: 2;
+        /* Below dot */
+        opacity: 1;
+        transform: none;
+        font-size: 10px;
+    }
+}

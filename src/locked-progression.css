@@ -1,0 +1,123 @@
+/* ===============================================
+   LOCKED PROGRESSION STYLES
+   =============================================== */
+
+/* Locked menu item */
+.menu-item.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: linear-gradient(rgba(248, 250, 252, 0.95), rgba(248, 250, 252, 0.95)),
+        url('/learning-menu-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-color: #e2e8f0;
+    pointer-events: none;
+}
+
+.menu-item.locked:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: #e2e8f0;
+}
+
+.menu-item.locked .menu-icon {
+    color: #94a3b8;
+    animation: none;
+}
+
+.menu-item.locked .menu-label {
+    color: #94a3b8;
+}
+
+.menu-item.locked .menu-desc {
+    color: #cbd5e1;
+    font-style: italic;
+}
+
+/* Completed  menu item */
+.menu-item.completed {
+    background: linear-gradient(rgba(209, 250, 229, 0.95), rgba(167, 243, 208, 0.95)),
+        url('/learning-menu-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-color: #22c55e;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.15);
+}
+
+.menu-item.completed:hover {
+    border-color: #16a34a;
+    box-shadow: 0 4px 16px rgba(34, 197, 94, 0.3);
+}
+
+.menu-item.completed .menu-label {
+    color: #166534;
+}
+
+.menu-item.completed .menu-desc {
+    color: #15803d;
+}
+
+/* Status checkmark */
+.status-check {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4);
+    flex-shrink: 0;
+}
+
+/* Tooltip for locked items */
+.menu-item.locked::after {
+    content: attr(title);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: #1e293b;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+    z-index: 100;
+}
+
+.menu-item.locked:hover::after {
+    opacity: 1;
+}
+
+/* Unlocked item pulse (subtle) */
+.menu-item:not(.locked):not(.completed) .menu-icon {
+    animation: gentlePulse 2s ease-in-out infinite;
+}
+
+/* Lock icon shake on hover attempt */
+.menu-item.locked:hover .menu-icon {
+    animation: lockShake 0.3s;
+}
+
+@keyframes lockShake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-3px);
+    }
+
+    75% {
+        transform: translateX(3px);
+    }
+}

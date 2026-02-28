@@ -1,0 +1,229 @@
+/* ===============================================
+   PROGRESSIVE MILESTONE STATES (0/3, 1/3, 2/3, 3/3)
+   Enhanced Visual Clarity & Text Readability
+   =============================================== */
+
+/* Progress indicator badge (shows for 1/3 and 2/3) */
+.milestone-progress-indicator {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 8px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #5E81AC 0%, #4C566A 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: 700;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    animation: progressBadgePop 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@keyframes progressBadgePop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Text readability enhancements for all milestone titles */
+.timeline__event-title {
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.timeline__year {
+    font-weight: 600;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* ========================================
+   STATE 0: 0/3 - Not Started
+   No special styling needed - uses default timeline styles
+   ======================================== */
+
+/* Enhance default state for better readability */
+.milestone-progress-0 .timeline__content {
+    background: rgba(46, 52, 64, 0.75);
+    border-color: #4C566A;
+}
+
+.milestone-progress-0 .timeline__event-title {
+    color: #D8DEE9;
+    font-weight: 600;
+}
+
+.milestone-progress-0 .timeline__year {
+    color: #D8DEE9;
+}
+
+.milestone-progress-0 .timeline__connector::before {
+    background: #4C566A;
+}
+
+/* ========================================
+   STATE 1: 1/3 - First Task Completed
+   Muted Blue - Clear Progress Indicator
+   ======================================== */
+.milestone-progress-1 .timeline__content {
+    background: linear-gradient(135deg, rgba(59, 95, 138, 0.9) 0%, rgba(59, 95, 138, 0.85) 100%);
+    border-color: #5E81AC;
+    box-shadow: 0 0 15px rgba(94, 129, 172, 0.25);
+}
+
+.milestone-progress-1 .timeline__event-title {
+    color: #ECEFF4;
+    font-weight: 700;
+}
+
+.milestone-progress-1 .timeline__year {
+    color: #ECEFF4;
+}
+
+.milestone-progress-1 .timeline__connector {
+    background: linear-gradient(to bottom, #5E81AC, #4C566A);
+}
+
+.milestone-progress-1 .timeline__connector::before {
+    background: linear-gradient(135deg, #81A1C1 0%, #5E81AC 100%);
+    box-shadow: 0 0 10px rgba(94, 129, 172, 0.4);
+}
+
+/* ========================================
+   STATE 2: 2/3 - Two Tasks Completed
+   Warm Bronze - Stronger Visual Progress
+   ======================================== */
+.milestone-progress-2 .timeline__content {
+    background: linear-gradient(135deg, rgba(122, 92, 46, 0.95) 0%, rgba(122, 92, 46, 0.9) 100%);
+    border-color: #D08770;
+    box-shadow: 0 0 20px rgba(208, 135, 112, 0.35),
+        0 0 40px rgba(208, 135, 112, 0.15);
+    animation: gentleGlow 3s ease-in-out infinite;
+}
+
+@keyframes gentleGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(208, 135, 112, 0.35),
+            0 0 40px rgba(208, 135, 112, 0.15);
+    }
+
+    50% {
+        box-shadow: 0 0 25px rgba(208, 135, 112, 0.45),
+            0 0 50px rgba(208, 135, 112, 0.2);
+    }
+}
+
+.milestone-progress-2 .timeline__event-title {
+    color: #FFF6E5;
+    font-weight: 700;
+}
+
+.milestone-progress-2 .timeline__year {
+    color: #FFF6E5;
+    font-weight: 600;
+}
+
+.milestone-progress-2 .timeline__connector {
+    background: linear-gradient(to bottom, #D08770, #7A5C2E);
+    box-shadow: 0 0 8px rgba(208, 135, 112, 0.4);
+}
+
+.milestone-progress-2 .timeline__connector::before {
+    background: linear-gradient(135deg, #D08770 0%, #A67C52 100%);
+    box-shadow: 0 0 12px rgba(208, 135, 112, 0.5);
+}
+
+.milestone-progress-2 .milestone-progress-indicator {
+    background: linear-gradient(135deg, #D08770 0%, #A67C52 100%);
+}
+
+/* ========================================
+   STATE 3: 3/3 - Fully Completed
+   Golden Highlight - Maximum Achievement
+   ======================================== */
+.milestone-progress-3 .timeline__content {
+    background: linear-gradient(135deg, rgba(180, 142, 46, 1) 0%, rgba(180, 142, 46, 0.95) 100%);
+    border-color: #EBCB8B;
+    box-shadow: 0 0 30px rgba(235, 203, 139, 0.5),
+        0 0 60px rgba(235, 203, 139, 0.25);
+    animation: richGlow 2s ease-in-out infinite;
+}
+
+@keyframes richGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 30px rgba(235, 203, 139, 0.5),
+            0 0 60px rgba(235, 203, 139, 0.25);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(235, 203, 139, 0.6),
+            0 0 80px rgba(235, 203, 139, 0.35);
+    }
+}
+
+.milestone-progress-3 .timeline__event-title {
+    color: #1E1E1E;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.milestone-progress-3 .timeline__year {
+    color: #1E1E1E;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.milestone-progress-3 .timeline__connector {
+    background: linear-gradient(to bottom, #EBCB8B, #B48E2E);
+    box-shadow: 0 0 12px rgba(235, 203, 139, 0.6);
+}
+
+.milestone-progress-3 .timeline__connector::before {
+    background: linear-gradient(135deg, #EBCB8B 0%, #D9B976 100%);
+    box-shadow: 0 0 16px rgba(235, 203, 139, 0.8),
+        inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+/* Shimmer effect for fully completed */
+.milestone-progress-3 .timeline__content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(255, 255, 255, 0.25),
+            transparent);
+    animation: shimmer 3s infinite;
+    pointer-events: none;
+}
+
+@keyframes shimmer {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}

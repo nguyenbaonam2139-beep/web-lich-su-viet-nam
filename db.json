@@ -1,0 +1,374 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "ADMIN123",
+      "password": "123456789",
+      "role": "admin",
+      "name": "Administrator"
+    },
+    {
+      "username": "1",
+      "password": "1",
+      "name": "1",
+      "role": "user",
+      "profile": {
+        "tokens": 290,
+        "badges": [
+          "milestone-1-complete"
+        ]
+      },
+      "id": 2
+    },
+    {
+      "username": "2",
+      "password": "2",
+      "name": "2",
+      "role": "user",
+      "profile": {
+        "tokens": 240,
+        "badges": [
+          "milestone-1-complete"
+        ]
+      },
+      "id": 3
+    },
+    {
+      "username": "3",
+      "password": "3",
+      "name": "3",
+      "role": "user",
+      "profile": {
+        "tokens": 0,
+        "badges": []
+      },
+      "id": 4
+    },
+    {
+      "username": "4",
+      "password": "4",
+      "name": "4",
+      "role": "user",
+      "profile": {
+        "tokens": 0,
+        "badges": []
+      },
+      "id": 5
+    },
+    {
+      "username": "5",
+      "password": "5",
+      "name": "5",
+      "role": "user",
+      "profile": {
+        "tokens": 0,
+        "badges": []
+      },
+      "id": 6
+    },
+    {
+      "username": "n",
+      "password": "n",
+      "name": "n",
+      "role": "user",
+      "profile": {
+        "tokens": 60,
+        "badges": [
+          "milestone-1-complete"
+        ]
+      },
+      "id": 7
+    },
+    {
+      "username": "m",
+      "password": "m",
+      "name": "m",
+      "role": "user",
+      "profile": {
+        "tokens": 10,
+        "badges": []
+      },
+      "id": 8
+    },
+    {
+      "username": "c",
+      "password": "c",
+      "name": "c",
+      "role": "user",
+      "profile": {
+        "tokens": 70,
+        "badges": [
+          "milestone-1-complete"
+        ]
+      },
+      "id": 9
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "year": 1945,
+      "endYear": 1954,
+      "status": "active",
+      "title": "Kháng chiến chống Pháp & Giành độc lập",
+      "description": "Từ Cách mạng Tháng Tám đến Chiến thắng Điện Biên Phủ lừng lẫy.",
+      "detail": "Giai đoạn 1945–1954 là chặng đường hào hùng nhất trong lịch sử dân tộc: từ cuộc Cách mạng Tháng Tám giành chính quyền, đến 9 năm kháng chiến trường kỳ chống thực dân Pháp, kết thúc bằng chiến thắng Điện Biên Phủ chấn động địa cầu, buộc Pháp ký Hiệp định Geneva.",
+      "imageUrl": "https://cdn.tienphong.vn/images/a6bf4f60924201126af6849ca45a39808e1dca55a7a6a6d4fd2839a94ec77382293edab0c4a3cebe949b64399ed70b26f0ca7ea95604f1801b5908427e7f00fe/dbp-3521.jpg",
+      "color": "red",
+      "position": "top",
+      "icon": "star",
+      "chapters": [
+        {
+          "id": "ch1-cmtt",
+          "title": "",
+          "icon": "🏮",
+          "description": [
+            "Thời cơ ngàn năm có một & Ngày Độc lập 2/9/1945"
+          ],
+          "pages": [
+            {
+              "id": "p1-cmtt",
+              "type": "knowledge",
+              "title": "Thời cơ vàng",
+              "content": "Sau Chiến tranh Thế giới thứ 2, phát xít Nhật đầu hàng đồng minh. Đây là thời cơ vàng để nhân dân Việt Nam giành lại độc lập. Lực lượng cách mạng do Đảng Cộng sản và Hồ Chí Minh lãnh đạo đã chuẩn bị sẵn sàng suốt nhiều năm tại các căn cứ địa.",
+              "media": [
+                {
+                  "url": "https://cdn.nhandan.vn/images/5f89b7807d05469a74477ecb06829906493ac6e7e710e034737c2727973bab4e8da75eb472435c2056e3cf70640ecc25677c74c197c15944dcfbfb95c35f53f2/nhat-dau-hang-dong-minh-3247.jpg",
+                  "type": "image",
+                  "position": "left",
+                  "caption": "Phát xít Nhật ký văn kiện đầu hàng."
+                }
+              ]
+            },
+            {
+              "id": "p2-cmtt",
+              "type": "knowledge",
+              "title": "Quảng trường Ba Đình lịch sử",
+              "content": "Ngày 2/9/1945, tại Quảng trường Ba Đình, Chủ tịch Hồ Chí Minh đọc bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa. Sự kiện mở ra kỷ nguyên mới: Kỷ nguyên độc lập, tự do và nhân dân lao động làm chủ đất nước.",
+              "media": [
+                {
+                  "url": "data:image/jpeg;base64,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",
+                  "type": "image",
+                  "position": "right",
+                  "caption": "Bác Hồ đọc Tuyên ngôn Độc lập ngày 2/9/1945."
+                }
+              ]
+            },
+            {
+              "id": "p-video-cmtt",
+              "type": "video",
+              "title": "Phim tư liệu: Cách mạng Tháng Tám 1945",
+              "content": "Theo chân những thước phim lịch sử ghi lại không khí sục sôi của những ngày Tổng khởi nghĩa, từ lán Nà Nưa đến Quảng trường Ba Đình rợp bóng cờ đỏ sao vàng.",
+              "media": [
+                {
+                  "url": "https://www.youtube.com/watch?v=zgR6nH84wsQ",
+                  "type": "video",
+                  "position": "center"
+                }
+              ]
+            },
+            {
+              "id": "p3-cmtt",
+              "type": "quiz",
+              "interactionData": {
+                "questions": [
+                  {
+                    "id": 101,
+                    "question": "Sự kiện nào đánh dấu Việt Nam tuyên bố độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa?",
+                    "options": [
+                      "Chiến thắng Điện Biên Phủ",
+                      "Cách mạng Tháng Tám & Tuyên ngôn Độc lập",
+                      "Đại thắng Mùa Xuân 1975",
+                      "Gia nhập ASEAN"
+                    ],
+                    "correctAnswer": 1
+                  }
+                ]
+              }
+            },
+            {
+              "id": "p4-cmtt",
+              "type": "character",
+              "interactionId": "ho-chi-minh"
+            }
+          ]
+        },
+        {
+          "id": "ch2-dbp",
+          "title": "",
+          "icon": "⚔️",
+          "description": [
+            "9 năm kháng chiến & Pháo đài tan vỡ 7/5/1954"
+          ],
+          "pages": [
+            {
+              "id": "p1-dbp",
+              "type": "knowledge",
+              "title": "Tập đoàn cứ điểm Điện Biên Phủ",
+              "content": "Đây là chiến thắng quân sự lớn nhất trong cuộc Chiến tranh Đông Dương (1945 – 1954) của Việt Nam. Với thắng lợi quyết định này, lực lượng Quân đội Nhân dân Việt Nam do Đại tướng Võ Nguyên Giáp chỉ huy đã buộc quân đội Pháp và Quốc Gia Việt Nam tại Điện Biên Phủ phải đầu hàng vào ngày 7 tháng 5 năm 1954, sau 2 tháng cầm cự. Pháo đài Điện Biên Phủ vốn được Pháp xây dựng thành tập đoàn cứ điểm mạnh nhất Đông Dương.",
+              "media": [
+                {
+                  "url": "data:image/jpeg;base64,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",
+                  "type": "image",
+                  "position": "left",
+                  "caption": "Sơ đồ tập đoàn cứ điểm Điện Biên Phủ."
+                }
+              ]
+            },
+            {
+              "id": "p2-dbp",
+              "type": "knowledge",
+              "title": "Quyết định lịch sử: Đánh chắc tiến chắc",
+              "content": "Năm 1953, các đòn tiến công chiến lược của quân ta trên các địa bàn trọng điểm buộc thực dân Pháp phải phân tán lực lượng để đối phó và làm phá sản bước đầu mưu đồ tập trung lực lượng của kế hoạch Navarre. Để cứu vãn tình thế trên chiến trường, Pháp được sự trợ giúp của Mỹ đã tăng viện lớn về binh lực và chi phí chiến tranh, mưu toan trong vòng 18 tháng sẽ tiêu diệt phần lớn bộ đội chủ lực của ta, kiểm soát lãnh thổ Việt Nam và Đông Dương.\n\nNgày 20-11-1953, Pháp mở cuộc hành quân đánh chiếm Điện Biên Phủ, từng bước xây dựng nơi đây thành tập đoàn cứ điểm mạnh. Chúng cho rằng đây là \"pháo đài khổng lồ không thể công phá\", tướng Giáp sẽ “không dám chấp nhận giao chiến”, vì Quân đội Việt Minh chưa bao giờ tiến công một tập đoàn cứ điểm lớn đến như vậy, nếu tiến công vào Điện Biên Phủ sẽ đi vào con đường tự sát.",
+              "media": [
+                {
+                  "url": "data:image/jpeg;base64,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",
+                  "type": "image",
+                  "position": "center",
+                  "caption": "Đại tướng Võ Nguyên Giáp tại mặt trận Điện Biên Phủ."
+                }
+              ]
+            },
+            {
+              "id": "p-video-dbp",
+              "type": "video",
+              "title": "Phim tư liệu: Chiến thắng Điện Biên Phủ",
+              "content": "Chứng kiến những thước phim quý giá về cuộc chiến chấn động địa cầu, từ công tác chuẩn bị hậu cần thần kỳ đến giây phút lá cờ quyết chiến quyết thắng tung bay trên nóc hầm De Castries.",
+              "media": [
+                {
+                  "url": "https://www.youtube.com/watch?v=CD8sKixEDsI",
+                  "type": "video",
+                  "position": "center"
+                }
+              ]
+            },
+            {
+              "id": "p3-dbp",
+              "type": "quiz",
+              "interactionData": {
+                "questions": [
+                  {
+                    "id": 202,
+                    "question": "Đại tướng Võ Nguyên Giáp đã thay đổi phương châm tác chiến tại Điện Biên Phủ như thế nào?",
+                    "options": [
+                      "Từ 'Đánh chắc tiến chắc' sang 'Đánh nhanh thắng nhanh'",
+                      "Từ 'Đánh nhanh thắng nhanh' sang 'Đánh chắc tiến chắc'",
+                      "Từ 'Phòng thủ' sang 'Tấn công'",
+                      "Từ 'Vây hãm' sang 'Đột kích'"
+                    ],
+                    "correctAnswer": 1
+                  }
+                ]
+              }
+            },
+            {
+              "id": "p4-dbp",
+              "type": "character",
+              "interactionId": "vo-nguyen-giap"
+            }
+          ]
+        }
+      ],
+      "questions": [
+        {
+          "id": 101,
+          "question": "Sự kiện nào đánh dấu Việt Nam tuyên bố độc lập, khai sinh nước Việt Nam Dân chủ Cộng hòa?",
+          "options": [
+            "Chiến thắng Điện Biên Phủ",
+            "Cách mạng Tháng Tám & Tuyên ngôn Độc lập",
+            "Đại thắng Mùa Xuân 1975",
+            "Gia nhập ASEAN"
+          ],
+          "correctAnswer": 1
+        },
+        {
+          "id": 1772289061317,
+          "question": "Câu hỏi mới?",
+          "options": [
+            "Lựa chọn A",
+            "Lựa chọn B",
+            "Lựa chọn C",
+            "Lựa chọn D"
+          ],
+          "correctAnswer": 0
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "year": 1954,
+      "endYear": 1975,
+      "status": "coming-soon",
+      "title": "Kháng chiến chống Mỹ & Thống nhất đất nước",
+      "description": "Từ Hiệp định Geneva đến Đại thắng 30/4/1975 lịch sử.",
+      "detail": "Giai đoạn 1954–1975 là cuộc kháng chiến chống Mỹ cứu nước vĩ đại, kết thúc bằng Chiến dịch Hồ Chí Minh lịch sử, giải phóng miền Nam thống nhất đất nước.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Saigon_tank.jpg/640px-Saigon_tank.jpg",
+      "color": "orange",
+      "position": "bottom",
+      "icon": "clock",
+      "chapters": [],
+      "questions": []
+    },
+    {
+      "id": 3,
+      "year": 1986,
+      "endYear": 2007,
+      "status": "coming-soon",
+      "title": "Đổi Mới & Hội nhập Quốc tế",
+      "description": "Từ Đại hội VI đến gia nhập WTO – hành trình vươn ra thế giới.",
+      "detail": "Giai đoạn 1986–2007 đánh dấu công cuộc Đổi Mới toàn diện và hội nhập quốc tế sâu rộng của Việt Nam.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hanoi_skyline.jpg/640px-Hanoi_skyline.jpg",
+      "color": "green",
+      "position": "top",
+      "icon": "gear",
+      "chapters": [],
+      "questions": []
+    },
+    {
+      "id": 4,
+      "year": 2015,
+      "endYear": 2025,
+      "status": "coming-soon",
+      "title": "Việt Nam trong Thế giới Hiện đại",
+      "description": "Cộng đồng ASEAN, đại dịch COVID-19 và những thách thức toàn cầu.",
+      "detail": "Từ 2015 đến nay, Việt Nam khẳng định vị thế trong Cộng đồng ASEAN và ứng phó tích cực với những thách thức toàn cầu như đại dịch COVID-19.",
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Flag_of_ASEAN.svg/512px-Flag_of_ASEAN.svg.png",
+      "color": "blue",
+      "position": "bottom",
+      "icon": "globe",
+      "chapters": [],
+      "questions": []
+    }
+  ],
+  "characters": [
+    {
+      "id": "vo-nguyen-giap",
+      "name": "Võ Nguyên Giáp",
+      "aliases": [
+        "Đại tướng Võ Nguyên Giáp",
+        "Anh Cả",
+        "Tướng Giáp"
+      ],
+      "milestoneId": 1,
+      "hints": [
+        "Vị Đại tướng đầu tiên của Quân đội Nhân dân Việt Nam",
+        "Được thế giới vinh danh là một trong những thiên tài quân sự lớn nhất thế kỷ 20",
+        "Vốn là một thầy giáo dạy lịch sử trước khi trở thành tướng quân",
+        "Tổng chỉ huy chiến dịch Điện Biên Phủ lừng lẫy năm 1954",
+        "Nổi tiếng với quyết định 'Đánh chắc tiến chắc' tại Điện Biên Phủ",
+        "Người chỉ huy trận đánh đánh bại đội quân tinh nhuệ nhất của Pháp",
+        "Thường được quân đội và nhân dân gọi thân thương là 'Anh Cả'"
+      ],
+      "portrait": "🎖️",
+      "bio": "Đại tướng Võ Nguyên Giáp (1911-2013) là Tổng tư lệnh Quân đội Nhân dân Việt Nam, người học trò xuất sắc của Chủ tịch Hồ Chí Minh.",
+      "yearBorn": 1911,
+      "yearDied": 2013,
+      "role": "Đại tướng, Tổng tư lệnh"
+    }
+  ],
+  "settings": {
+    "timelineBackground": "https://i.pinimg.com/1200x/51/ab/72/51ab72fe94740debbc9051930cfa4acf.jpg",
+    "backgroundSize": "90%",
+    "backgroundPosition": "center"
+  }
+}
